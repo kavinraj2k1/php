@@ -1,0 +1,230 @@
+html {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body{
+    height: 100%;
+    position: relative; 
+    background-image: url('img2.webp');
+}
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .container {
+    margin-top: 60px; /* Adjust the value to match the header's height */
+    height: 90vh; /* Adjust the value to account for header height */
+  }
+
+  .content {
+    padding: 20px;
+    /* position:relative; */
+    /* Add other styling for your content as needed */
+  }
+  
+  .navbar{
+    border: 1px solid rgba(28, 84, 129, 0.461);
+    background-color: rgba(59, 152, 228, 0.461);
+    border-width:20px;
+    margin: auto 0;
+    
+  }
+  .container1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+  }
+  
+  .heading {
+    margin-left: 30px; /* Adjust the margin as needed */
+  }
+  
+  .menu{
+      width: 400px;
+      /*float: left;*/
+      height: 70px;
+      margin-top: -90px;
+      margin-left: 50%;
+      padding-top: 0.5%;
+      padding-right: 0.5%;
+      font-size: 50%;
+  }
+  
+  ul{
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  ul li{
+      list-style: none;
+      margin-left: 62px;
+      margin-top: 30px;
+      font-size: 14px;
+  }
+  
+  ul li a{
+      text-decoration: none;
+      color: black;
+      font-family: Arial;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+  }
+  
+  ul li a:hover{
+      color: white;
+  }
+
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 1000px;
+    height: 300px;
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 28px;
+    margin: 0  28px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: inset-2px 2px 2px white;
+    justify-content: center;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: black;
+    background: transparent;
+}
+
+.main-user{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.user-input:nth-child(2n){
+    justify-content: end;
+}
+.user-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    background: none;
+}
+
+
+.user-input label{
+    width: 95%;
+    color:black;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 5px 0;
+    background: none;
+}
+
+.user-input input{
+    height: 40px;
+    width: auto;
+    border-radius: 7px;
+    outline: invert;
+    border: 2px solid white;
+    padding: 0 10px;
+    background: none;
+
+}
+
+.vehicle-type{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    background: none;
+    
+}
+
+
+.vehiclecategory{
+    margin: 15px 0;
+    color: black;
+    background: none;
+
+}
+
+.vehiclecategory label{
+    padding: 0 20px 0 5px;
+}
+
+.vehiclecategory label, .vehiclecategory input, .form-submit-btn input{
+    cursor: pointer;
+
+}
+
+.submit-btn input{
+    margin-top: 1px;
+    border: none;
+    
+}
+
+.submit-btn input{
+    display: inline-block;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 25%;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background: rgba(59, 152, 228, 0.461); 
+}
+::placeholder{
+    color: rgba(29, 103, 164, 0.461);
+}
+
+
+.submit-btn input:hover{
+    background: rgba(59, 152, 228, 0.461);
+    color: rgb(255,255,255);
+}
+
+@media (max-width: 600px) {
+    .container{
+        min-width: 200px;
+    }
+    .user-input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input:nth-child(2n){
+        justify-content: space-between;
+    }
+    .vehiclecategory{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-user{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user::-webkit-scrollbar{
+        width: 0;
+    }

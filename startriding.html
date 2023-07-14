@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="startriding.css">
+</head>
+<body>
+  <header class="header">
+    <div class="navbar">
+      <div class="container1">
+          <img src="logo.png" alt="Logo" class="logo">
+          <h1 class="heading">PLUG MAP</h1>
+      </div>
+    <div class="menu">
+          <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#help">HELP</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          
+    </div>
+  </div>
+  </header>
+  <div class="container">
+    <h1 class="form-title">Enter Your Destination</h1>
+    <form action="demo.php" method="POST">
+        <div class="main-user">
+            <div class="user-input">
+                <label for="CLocation">Enter your current location</label>
+                <input type="text" id="CLocation" name="CLocation" placeholder="current location">
+            </div>
+            <div class="user-input">
+                <label for="DLocation">Enter your destination</label>
+                <input type="text" id="DLocation" name="DLocation" placeholder="Destination">
+            </div>
+        </div>
+        <div class="vehicle-type">
+            <span class="vehicletype">Select vehicle type</span>
+            <div class="vehiclecategory">
+                <input type="checkbox" name="vehicle-type" id="car">
+                <label for="car">Car</label>
+                <input type="checkbox" name="vehicle-type" id="two-wheeler">
+                <label for="two-wheeler">Two-Wheeler</label>
+            </div>
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="ENTER">
+        </div>
+  
+    </form>
+
+</div>
+
+
+</body>
+</html>
+
+
