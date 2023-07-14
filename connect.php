@@ -1,4 +1,9 @@
 <?php
+
+
+
+// Retrieve form data
+$name = $_POST['name'];
 $servername = "localhost"; // Replace with your database server name
 $username = "root"; // Replace with your database username
 $password = "Kavin123"; // Replace with your database password
@@ -11,10 +16,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-if($_SERVER["REQUEST_METHOD"]=="POST")
-{
-$name = $_POST['name'];
-$email=$_POST['email'];
+
+// Execute the query
 $sql = "SELECT * FROM admin WHERE name = '$name'";
 $result = $conn->query($sql);
 
@@ -30,6 +33,5 @@ if ($result->num_rows > 0) {
 
 // Close the database connection
 $conn->close();
-}
 ?>
 
