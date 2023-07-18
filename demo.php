@@ -21,16 +21,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
     $result=$stmt->get_result();
 
-    
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        $output = "<p>Route Description: " . $row["Output"] . "</p>";
+        $output = $row["Output"];
     } else {
         $output = "No Details about this places";
     }
     session_start();
     $_SESSION['output'] = $output;
-    header("Location: display_data.php");
-    exit();
+    header("Location: display_data.html");
+    exit(); 
 }
 ?>
